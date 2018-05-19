@@ -6,6 +6,7 @@
 	<module name='AlbumEnvy_Popup' setup_version='0.0.1'>
 		<sequence>
 			<module name='AlbumEnvy_Core'/>
+			<module name='Mediaclip_Hub'/>
 		</sequence>
 	</module>
 </config>
