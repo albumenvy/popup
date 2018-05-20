@@ -45,6 +45,18 @@ So the `sortOrder` value is 1920. -->
 ведь в будущих версиях Magento перечень параметров предка может измениться.
 -->
 				</field>
+				<field
+					id='content'
+					showInDefault='1' showInStore='1' showInWebsite='1'
+					sortOrder='2'
+					translate='label'
+					type='select'
+				>
+					<label>Content</label>
+					<source_model>Df\Config\Source\Block</source_model>
+					<comment><![CDATA[]]></comment>
+					<depends><field id='enable'>1</field></depends>
+				</field>
 			</group>
 		</section>
 	</system>
