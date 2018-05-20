@@ -14,13 +14,17 @@ $.extend(sb.prototype, {
 			// How is the `mage.modal` jQuery UI widget implemented and used?
 			// https://mage2.pro/t/5518
 			var m = $($content.clone().removeClass('df-hidden')).modal({
-				buttons: [],
-				modalClass: 'albumenvy-popup',
-				type: 'popup'
+				buttons: [{
+					class: 'action primary'
+					,click: function () {m.modal('closeModal'); _super();}
+					,text: $.mage.__('Continue')
+				}]
+				,modalClass: 'albumenvy-popup'
+				//,title: $.mage.__('TEST')
+				,type: 'popup'
 			});
 			m.modal('openModal');
 		}
-		//return _super();
 	})
 });
 return sb; };});
