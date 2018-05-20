@@ -4,4 +4,5 @@
 	xsi:noNamespaceSchemaLocation='urn:magento:framework:View/Layout/etc/page_configuration.xsd'
 >
 	<head><css src='AlbumEnvy_Popup::main.css'/></head>
+	<body><referenceContainer name='root'><block class='AlbumEnvy\Popup\Content'/></referenceContainer></body>
 </page>
