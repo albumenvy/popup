@@ -4,7 +4,6 @@ define([
 ], function($, w, modal) {'use strict'; return function(sb) {
 $.extend(sb.prototype, {
 	submit: w.wrap(sb.prototype.submit, function(_super) {
-		debugger;
 		var $content = $('.albumenvy-popup-content');
 		if (!$content.length) {
 			_super();
